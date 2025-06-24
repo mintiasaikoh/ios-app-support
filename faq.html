@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>よくある質問 - MapSound</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .faq {
+            padding: 100px 0 50px;
+            background: #f8f9fa;
+            min-height: 100vh;
+        }
+        .faq-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq h1 {
+            color: #667eea;
+            margin-bottom: 2rem;
+        }
+        .faq-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #eee;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        .faq-answer {
+            color: #666;
+            line-height: 1.8;
+        }
+        .back-link {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: opacity 0.3s;
+        }
+        .back-link:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="faq">
+        <div class="container">
+            <a href="index.html" class="back-link">← ホームに戻る</a>
+            <div class="faq-content">
+                <h1>よくある質問（FAQ）</h1>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: 32bit floatとは何ですか？どのようなメリットがありますか？</div>
+                    <div class="faq-answer">32bit float録音は、従来の24bit録音と比べて非常に広いダイナミックレンジを持ちます。最大のメリットは、録音レベルの設定ミスによるクリッピング（音割れ）が事実上発生しないことです。後から適切なレベルに調整できるため、プロの現場でも重宝されています。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: 内蔵マイクでも高音質録音はできますか？</div>
+                    <div class="faq-answer">内蔵マイクでも48kHzまでの高音質録音が可能です。ただし、より高いサンプリングレート（96kHz、192kHz）や、プロフェッショナルな音質を求める場合は、USB-CやLightning接続の外部マイクの使用をお勧めします。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: 録音ファイルのサイズはどのくらいになりますか？</div>
+                    <div class="faq-answer">録音ファイルのサイズは設定により異なります：<br>
+                    • 44.1kHz/16bit/ステレオ: 約10MB/分<br>
+                    • 48kHz/24bit/ステレオ: 約17MB/分<br>
+                    • 192kHz/32bit float/ステレオ: 約92MB/分<br>
+                    長時間録音の際は、十分なストレージ容量をご確認ください。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: GPS位置情報はどのように使用されますか？</div>
+                    <div class="faq-answer">GPS位置情報は録音ファイルのメタデータとして保存され、録音場所の記録に使用されます。位置情報はローカルに保存され、外部に送信されることはありません。位置情報の記録はオプション機能で、設定からオフにすることも可能です。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: バックグラウンドでの録音は可能ですか？</div>
+                    <div class="faq-answer">はい、MapSoundはバックグラウンド録音に対応しています。他のアプリを使用中や画面をロックした状態でも録音を継続できます。ただし、バッテリー消費が増加するため、長時間録音の際はご注意ください。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: 録音ファイルの共有方法を教えてください。</div>
+                    <div class="faq-answer">録音ファイルは以下の方法で共有できます：<br>
+                    1. ファイルアプリから直接アクセス<br>
+                    2. AirDropで他のAppleデバイスに送信<br>
+                    3. メールやメッセージアプリで共有<br>
+                    4. クラウドストレージアプリにエクスポート</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: 録音が途中で止まってしまいました。データは失われますか？</div>
+                    <div class="faq-answer">MapSoundには録音リカバリー機能が搭載されています。アプリが予期せず終了した場合でも、録音データは可能な限り保護されます。次回アプリ起動時に、復元可能な録音データがあれば通知されます。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: 対応している外部マイクを教えてください。</div>
+                    <div class="faq-answer">以下のタイプの外部マイクに対応しています：<br>
+                    • USB-C接続マイク（USB Audio Class対応）<br>
+                    • Lightning接続マイク（MFi認証製品）<br>
+                    • 3.5mmジャック接続マイク（Lightning-3.5mmアダプタ経由）<br>
+                    具体的な製品例：Zoom iQ7、Shure MV88、RODE VideoMic MEなど</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: iPadでも使用できますか？</div>
+                    <div class="faq-answer">はい、MapSoundはiPadにも対応しています。iPadの大画面を活かし、より見やすいスペクトラム表示や操作性を提供します。iPad ProのUSB-Cポートを使用すれば、プロ用オーディオインターフェースも接続可能です。</div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">Q: アップデートの予定はありますか？</div>
+                    <div class="faq-answer">MapSoundは継続的に改善を行っています。今後予定している機能：<br>
+                    • クラウド同期機能<br>
+                    • 音声認識メモ機能<br>
+                    • MP3、AACエクスポート対応<br>
+                    • 複数トラック同時録音<br>
+                    ユーザーの皆様からのフィードバックを参考に、優先順位を決定しています。</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

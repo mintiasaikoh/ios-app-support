@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アプリサポート</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>アプリ名</h1>
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#features">機能</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+                <li><a href="privacy.html">プライバシーポリシー</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>あなたの毎日をもっと便利に</h2>
+            <p>シンプルで使いやすいiOSアプリ</p>
+            <a href="#" class="btn-download">App Storeでダウンロード</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>主な機能</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>機能1</h3>
+                    <p>機能の説明をここに記載します。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>機能2</h3>
+                    <p>機能の説明をここに記載します。</p>
+                </div>
+                <div class="feature-card">
+                    <h3>機能3</h3>
+                    <p>機能の説明をここに記載します。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>お問い合わせ</h2>
+            <p>ご質問・ご要望・不具合報告などお気軽にお問い合わせください。</p>
+            
+            <form action="https://formsubmit.co/yasunoritani@gmail.com" method="POST" class="contact-form">
+                <!-- FormSubmitの設定 -->
+                <input type="hidden" name="_subject" value="アプリサポートページからのお問い合わせ">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://mintiasaikoh.github.io/ios-app-support/thanks.html">
+                
+                <div class="form-group">
+                    <label for="name">お名前 <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">メールアドレス <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">お問い合わせ種別</label>
+                    <select id="category" name="category">
+                        <option value="質問">質問</option>
+                        <option value="要望">要望</option>
+                        <option value="不具合報告">不具合報告</option>
+                        <option value="その他">その他</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">メッセージ <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-submit">送信する</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 アプリ名. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

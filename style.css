@@ -18,7 +18,7 @@ body {
 
 /* ナビゲーション */
 nav {
-    background: #007AFF;
+    background: #1a1a1a;
     color: white;
     padding: 1rem 0;
     position: fixed;
@@ -36,6 +36,9 @@ nav .container {
 
 nav h1 {
     font-size: 1.5rem;
+    background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav ul {
@@ -56,7 +59,7 @@ nav a:hover {
 
 /* ヒーローセクション */
 .hero {
-    background: linear-gradient(135deg, #007AFF 0%, #0051D5 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 150px 0 100px;
     text-align: center;
@@ -66,22 +69,30 @@ nav a:hover {
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 2rem;
 }
 
 .btn-download {
     display: inline-block;
     background: white;
-    color: #007AFF;
+    color: #667eea;
     padding: 15px 30px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 2rem;
-    transition: transform 0.3s;
+    margin-top: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .btn-download:hover {
     transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 /* 機能セクション */
@@ -94,11 +105,12 @@ nav a:hover {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 3rem;
+    color: #1a1a1a;
 }
 
 .feature-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
 }
 
@@ -106,28 +118,64 @@ nav a:hover {
     background: white;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
 }
 
 .feature-card h3 {
-    color: #007AFF;
+    color: #667eea;
     margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* 用途セクション */
+.use-cases {
+    padding: 80px 0;
+    background: white;
+}
+
+.use-cases h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #1a1a1a;
+}
+
+.use-case-list {
+    max-width: 800px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.use-case-list li {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+}
+
+.use-case-list li:hover {
+    background: #e9ecef;
 }
 
 /* お問い合わせセクション */
 .contact {
     padding: 80px 0;
+    background: #f8f9fa;
 }
 
 .contact h2 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1rem;
+    color: #1a1a1a;
 }
 
 .contact > p {
@@ -139,6 +187,10 @@ nav a:hover {
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 .form-group {
@@ -149,6 +201,7 @@ nav a:hover {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
+    color: #333;
 }
 
 .required {
@@ -170,11 +223,11 @@ nav a:hover {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #007AFF;
+    border-color: #667eea;
 }
 
 .btn-submit {
-    background: #007AFF;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 15px 40px;
     border: none;
@@ -183,16 +236,17 @@ nav a:hover {
     font-weight: bold;
     cursor: pointer;
     width: 100%;
-    transition: background 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .btn-submit:hover {
-    background: #0051D5;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
 /* フッター */
 footer {
-    background: #333;
+    background: #1a1a1a;
     color: white;
     text-align: center;
     padding: 2rem 0;
@@ -209,13 +263,27 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
         gap: 1rem;
+        font-size: 0.9rem;
     }
     
     .hero h2 {
         font-size: 2rem;
     }
     
+    .hero p {
+        font-size: 1rem;
+    }
+    
     .hero {
         margin-top: 100px;
+        padding: 120px 0 80px;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .use-case-list li {
+        font-size: 1rem;
     }
 }
